@@ -1,9 +1,0 @@
-.description__paragraph-2 {
-    margin-top: 20px;
-}
-
-@media (max-width: 783px) {
-    .description__paragraph-2 {
-        display: none;
-    }
-}
