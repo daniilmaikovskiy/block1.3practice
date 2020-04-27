@@ -1,0 +1,11 @@
+.header__menu-caption {
+    display: none;
+    margin-right: 9px;
+    margin-left: 32px;
+}
+
+@media (min-width: 1120px) {
+    .header__menu-caption {
+        display: inline;
+    }
+}

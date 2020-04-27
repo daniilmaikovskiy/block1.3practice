@@ -1,0 +1,19 @@
+.header__left-body {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+    width: 154px;
+}
+
+@media (min-width: 784px) {
+    .header__left-body {
+        width: 180px;
+    }
+}
+
+@media (min-width: 1120px) {
+    .header__left-body {
+        display: none;
+    }
+}

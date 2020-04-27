@@ -1,0 +1,19 @@
+@import "__text/__text.css";
+@import "--active/--active.css";
+@import "__text/--margin-right--25px/--margin-right--25px.css";
+
+.button {
+    flex-shrink: 0;
+    display: inline-flex;
+    height: 40px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 6px;
+    color: #7E7E82;
+}
+
+@media (max-width: 1119px) {
+    .button\@large-screen {
+        display: none;
+    }
+}

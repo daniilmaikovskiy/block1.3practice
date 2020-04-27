@@ -1,0 +1,15 @@
+.description__body {
+    margin: 24px 16px 0 16px;
+}
+
+@media (min-width: 784px) {
+    .description__body {
+        margin-left: 24px;
+    }
+}
+
+@media (min-width: 1120px) {
+    .description__body {
+        margin-left: 32px;
+    }
+}

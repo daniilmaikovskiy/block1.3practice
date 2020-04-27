@@ -1,0 +1,13 @@
+.header__body {
+    display: flex;
+    justify-content: space-between;
+    height: 100%;
+    padding: 0 16px;
+}
+
+@media (min-width: 1120px) {
+    .header__body {
+        padding-right: 32px;
+        padding-top: 42px;
+    }
+}

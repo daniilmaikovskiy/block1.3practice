@@ -1,0 +1,9 @@
+.button--active {
+    border: 2px solid #B8FFEC;
+}
+
+@media (min-width: 1120px) {
+    .button--active\@small-middle-screen {
+        border: 0;
+    }
+}

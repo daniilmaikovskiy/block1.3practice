@@ -1,0 +1,6 @@
+@media (min-width: 784px) {
+    .main__description-and-picture-wrapper {
+        display: flex;
+        margin-right: 25px;
+    }
+}

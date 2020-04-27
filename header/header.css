@@ -1,0 +1,22 @@
+@import "__body/__body.css";
+@import "__border/__border.css";
+@import "__left-body/__left-body.css";
+@import "__right-body/__right-body.css";
+@import "__menu-item/__menu-item.css";
+@import "__menu-caption/__menu-caption.css";
+
+.header {
+    width: 100%;
+    height: 87px;
+    box-shadow: 0 1px #d9fff5;
+    background: #FFFFFF;
+    z-index: -1;
+}
+
+@media (min-width: 1120px) {
+    .header {
+        width: 100%;
+        box-shadow: none;
+        background: #F8F8F8;
+    }
+}

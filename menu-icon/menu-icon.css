@@ -1,0 +1,12 @@
+.menu-icon {
+    width: 40px;
+    height: 40px;
+    border-radius: 20px;
+    background-color: #FF3E79;
+}
+
+@media (max-width: 783px), (min-width: 1120px) {
+    .menu-icon\@middle-screen {
+        display: none;
+    }
+}
