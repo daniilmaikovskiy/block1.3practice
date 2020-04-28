@@ -243,10 +243,16 @@ html, body {
     }
 }
 
+.main__description-and-picture-wrapper {
+        margin-left: 16px;
+        margin-top: 24px;
+    }
+
 @media (min-width: 784px) {
     .main__description-and-picture-wrapper {
         display: flex;
         margin-right: 25px;
+        margin-left: 25px;
     }
 }
 
