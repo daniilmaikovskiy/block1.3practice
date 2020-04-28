@@ -74,7 +74,8 @@ html, body {
 
 @media (min-width: 784px) and (max-width: 1119px) {
     .header__right-body {
-        width: 314px;
+        width: 290px;
+        justify-content: space-between;
     }
 }
 
@@ -134,6 +135,19 @@ html, body {
 
 @media (max-width: 783px), (min-width: 1120px) {
     .contacts {
+        display: none;
+    }
+}
+
+.settings {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 96px;
+}
+
+@media (min-width: 1119px) {
+    .settings {
         display: none;
     }
 }
