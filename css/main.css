@@ -163,14 +163,6 @@ html, body {
     margin-top: 24px;
 }
 
-@media (min-width: 1120px) {
-    .title__body {
-        position: absolute;
-        top: 42px;
-        margin-top: 0;
-    }
-}
-
 .title__header {
     font-size: 28px;
     line-height: 40px;
