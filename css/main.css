@@ -146,7 +146,7 @@ html, body {
     width: 96px;
 }
 
-@media (min-width: 1119px) {
+@media (min-width: 1120px) {
     .settings {
         display: none;
     }
