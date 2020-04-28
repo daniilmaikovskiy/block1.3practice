@@ -126,8 +126,14 @@ html, body {
     background-color: #FF3E79;
 }
 
+.contacts {
+    width: 152px;
+    display: flex;
+    justify-content: space-between;
+}
+
 @media (max-width: 783px), (min-width: 1120px) {
-    .menu-icon\@middle-screen {
+    .contacts {
         display: none;
     }
 }
