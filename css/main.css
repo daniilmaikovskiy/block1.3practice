@@ -203,12 +203,6 @@ html, body {
     border: 2px solid #B8FFEC;
 }
 
-@media (min-width: 1120px) {
-    .button--active\@small-middle-screen {
-        border: 0;
-    }
-}
-
 .button {
     flex-shrink: 0;
     display: inline-flex;
@@ -217,12 +211,6 @@ html, body {
     align-items: center;
     border-radius: 6px;
     color: #7E7E82;
-}
-
-@media (max-width: 1119px) {
-    .button\@large-screen {
-        display: none;
-    }
 }
 
 .description__body {
