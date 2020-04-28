@@ -79,14 +79,6 @@ html, body {
     }
 }
 
-@media (min-width: 1120px) {
-    .header__right-body {
-        width: 100%;
-        justify-content: flex-end;
-        align-items: stretch;
-    }
-}
-
 .header__menu-item {
     display: flex;
     align-items: center;
@@ -160,7 +152,6 @@ html, body {
 .title__body {
     display: flex;
     height: 100%;
-    margin-top: 24px;
 }
 
 .title__header {
