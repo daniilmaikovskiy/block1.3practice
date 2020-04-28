@@ -209,10 +209,6 @@ html, body {
     }
 }
 
-.button__text--margin-right--25px {
-    margin-right: 25px;
-}
-
 .button {
     flex-shrink: 0;
     display: inline-flex;
