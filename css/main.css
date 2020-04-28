@@ -293,7 +293,7 @@ html, body {
     content: "";
     width: 8px;
     height: 11px;
-    background-image: url(../../img/read-more.svg);
+    background-image: url(../img/read-more.svg);
 }
 
 @media (min-width: 784px) {
