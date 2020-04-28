@@ -114,9 +114,7 @@ html, body {
 
 @media (min-width: 1120px) {
     .header {
-        width: 100%;
-        box-shadow: none;
-        background: #F8F8F8;
+        display: none;
     }
 }
 
