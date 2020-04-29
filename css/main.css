@@ -38,12 +38,6 @@ html, body {
     }
 }
 
-@media (min-width: 1120px) {
-    .header__border\@large-screen {
-        display: none;
-    }
-}
-
 .header__left-body {
     display: flex;
     justify-content: space-between;
@@ -76,23 +70,6 @@ html, body {
     .header__right-body {
         width: 290px;
         justify-content: space-between;
-    }
-}
-
-.header__menu-item {
-    display: flex;
-    align-items: center;
-}
-
-.header__menu-caption {
-    display: none;
-    margin-right: 9px;
-    margin-left: 32px;
-}
-
-@media (min-width: 1120px) {
-    .header__menu-caption {
-        display: inline;
     }
 }
 
