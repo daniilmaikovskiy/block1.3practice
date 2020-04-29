@@ -260,6 +260,10 @@ html, body {
     color: #1B1C21;
 }
 
+.main__title {
+    padding-top: 24px;
+}
+
 .main__slide-menu {
     display: flex;
     position: relative;
@@ -297,5 +301,3 @@ html, body {
         display: none;
     }
 }
-
-
