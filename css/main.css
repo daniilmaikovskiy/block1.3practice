@@ -33,7 +33,7 @@ html, body {
 }
 
 @media (max-width: 783px) {
-    .header__border\@small-screen {
+    .header__border--\@small-screen {
         display: none;
     }
 }
