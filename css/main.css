@@ -264,6 +264,18 @@ html, body {
     margin-top: 24px;
 }
 
+.title__settings {
+    display: none;
+}
+
+@media (min-width: 1120px) {
+    .title__settings {
+        display: flex;
+        margin-right: 32px;
+        margin-left: auto;
+    }
+}
+
 .main__slide-menu {
     display: flex;
     position: relative;
