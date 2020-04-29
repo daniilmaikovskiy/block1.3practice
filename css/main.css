@@ -301,10 +301,4 @@ html, body {
     }
 }
 
-@media (min-width: 1120px) {
-    .main__body {
-        margin-top: -35px;
-    }
-}
-
 
