@@ -128,11 +128,6 @@ html, body {
     height: 100%;
 }
 
-.title__body {
-    display: flex;
-    height: 100%;
-}
-
 .title__header {
     font-size: 28px;
     line-height: 40px;
@@ -160,6 +155,7 @@ html, body {
 }
 
 .title {
+    display: flex;
     height: 40px;
 }
 
