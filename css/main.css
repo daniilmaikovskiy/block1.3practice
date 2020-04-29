@@ -115,6 +115,12 @@ html, body {
     width: 96px;
 }
 
+.settings__caption {
+    font-weight: 500;
+    margin-left: 20px;
+    margin-right: 10px;
+}
+
 @media (min-width: 1120px) {
     .settings {
         display: none;
@@ -273,6 +279,7 @@ html, body {
         display: flex;
         margin-right: 32px;
         margin-left: auto;
+        width: 393px;
     }
 }
 
