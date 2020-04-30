@@ -325,3 +325,18 @@ html, body {
     min-height: 500px;
     background: #fff;
 }
+
+.mobile-menu__header {
+    display: flex;
+    align-items: center;
+
+    padding: 0 24px;
+    height: 86px;
+
+    box-shadow: none;
+}
+
+.mobile-menu__header-logo {
+    margin-left: 16.73px;
+    margin-right: auto;
+}
