@@ -319,3 +319,9 @@ html, body {
         display: none;
     }
 }
+
+.mobile-menu {
+    width: 320px;
+    min-height: 500px;
+    background: #fff;
+}
