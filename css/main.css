@@ -404,3 +404,19 @@ html, body {
 .lang-panel__button--active {
     color: #7E7E82;
 }
+
+.mobile-menu {
+    filter: drop-shadow(16px 0px 52px rgba(14, 24, 80, 0.2));
+}
+
+.menu-icon, .button {
+    transition: filter 0.5s;
+}
+
+.menu-icon:hover, .menu-icon:focus {
+    filter: hue-rotate(120deg) brightness(1.5);
+}
+
+.button:hover, .button:focus {
+    filter: opacity(0.5);
+}
