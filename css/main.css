@@ -353,6 +353,7 @@ html, body {
     background: #fff;
     color: #1B1C21;
     font-weight: 500;
+    text-align: left;
 }
 
 .vertical-menu__button--active {
