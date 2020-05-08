@@ -317,6 +317,8 @@ html, body {
 }
 
 .mobile-menu {
+    display: flex;
+    flex-direction: column;
     position: absolute;
     width: 320px;
     min-height: 100%;
@@ -419,4 +421,8 @@ html, body {
 
 .button:hover, .button:focus {
     filter: opacity(0.5);
+}
+
+.footer {
+    margin-top: auto;
 }
