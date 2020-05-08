@@ -18,6 +18,7 @@ button {
 
 .header {
     min-height: 80px;
+    width: 100%;
     background: linear-gradient(270deg, #FFFFFF 0%, #F8F8F8 98.61%);
 }
 
@@ -41,7 +42,7 @@ button {
     content: " ";
     display: block;
     position: absolute;
-    top: 0px;
+    top: 0;
     right: 0;
     width: 24px;
     height: 72px;
@@ -52,7 +53,6 @@ button {
 .main__menu {
     padding-top: 16px;
     margin-left: 16px;
-    align-self: flex-start;
 }
 
 .main__menu::after {
@@ -96,18 +96,18 @@ button {
     background: url('../img1.5/brand-block__button-img.svg');
 }
 
-.main__switch {
-    margin-top: 16px;
+.switch {
+    display: flex;
+    justify-content: center;
     height: 12px;
 }
 
-.main {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+.main__switch {
+    margin-top: 16px;
 }
 
 .switch__item {
+    display: inline-block;
     background: #DDDDDD;
     width: 12px;
     height: 12px;
@@ -117,4 +117,18 @@ button {
 
 .switch__item--active {
     background: #B5B6BC;
+}
+
+@media (min-width: 768px) {
+    .menu {
+        flex-wrap: wrap;
+    }
+
+    .menu__brand-block {
+        margin-bottom: 16px;
+    }
+
+    .main__switch {
+        display: none;
+    }
 }
