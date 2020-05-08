@@ -12,6 +12,10 @@ html, body {
     background: #F8F8F8;
 }
 
+button {
+    cursor: pointer;
+}
+
 .header {
     min-height: 80px;
     background: linear-gradient(270deg, #FFFFFF 0%, #F8F8F8 98.61%);
