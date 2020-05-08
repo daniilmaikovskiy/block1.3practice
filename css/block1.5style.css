@@ -33,16 +33,11 @@ html, body {
     overflow: hidden;
 }
 
-.main__menu {
-    margin-top: 16px;
-    margin-left: 16px;
-}
-
 .menu::after {
     content: " ";
     display: block;
     position: absolute;
-    top: 0;
+    top: 0px;
     right: 0;
     width: 24px;
     height: 72px;
@@ -50,6 +45,14 @@ html, body {
      #F8F8F8 16.84%, rgba(248, 248, 248, 0.0001) 100%);
 }
 
+.main__menu {
+    padding-top: 16px;
+    padding-left: 16px;
+}
+
+.main__menu::after {
+    top: 16px;
+}
 
 .menu__brand-block {
     margin-right: 16px;
