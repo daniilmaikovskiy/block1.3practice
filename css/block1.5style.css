@@ -51,7 +51,8 @@ button {
 
 .main__menu {
     padding-top: 16px;
-    padding-left: 16px;
+    margin-left: 16px;
+    align-self: flex-start;
 }
 
 .main__menu::after {
@@ -93,4 +94,27 @@ button {
     width: 40px;
     height: 40px;
     background: url('../img1.5/brand-block__button-img.svg');
+}
+
+.main__switch {
+    margin-top: 16px;
+    height: 12px;
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.switch__item {
+    background: #DDDDDD;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    margin-right: 12px;
+}
+
+.switch__item--active {
+    background: #B5B6BC;
 }
