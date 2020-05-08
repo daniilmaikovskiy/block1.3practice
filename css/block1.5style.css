@@ -11,3 +11,18 @@
 html, body {
     background: #F8F8F8;
 }
+
+.header {
+    min-height: 80px;
+    background: linear-gradient(270deg, #FFFFFF 0%, #F8F8F8 98.61%);
+}
+
+.header__title {
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: -0.2px;
+    text-transform: uppercase;
+    font-weight: normal;
+    color: #7E7E82;
+    padding: 16px;
+}
