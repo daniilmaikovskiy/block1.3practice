@@ -26,3 +26,64 @@ html, body {
     color: #7E7E82;
     padding: 16px;
 }
+
+.menu {
+    position: relative;
+    display: flex;
+    overflow: hidden;
+}
+
+.main__menu {
+    margin-top: 16px;
+    margin-left: 16px;
+}
+
+.menu::after {
+    content: " ";
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 24px;
+    height: 72px;
+    background: linear-gradient(270deg,
+     #F8F8F8 16.84%, rgba(248, 248, 248, 0.0001) 100%);
+}
+
+
+.menu__brand-block {
+    margin-right: 16px;
+}
+
+.brand-block {
+    flex-shrink: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #FFFFFF;
+    border: 1px solid #EAEAEA;
+    border-radius: 6px;
+    width: 240px;
+    height: 72px;
+    padding: 0 16px;
+}
+
+.brand-block__logo {
+    display: block;
+    max-height: 32px;
+    max-width: auto;
+}
+
+.brand-block__logo--small {
+    max-height: 44px;
+}
+
+.brand-block__logo--big {
+    max-height: 24px;
+}
+
+.brand-block__button {
+    width: 40px;
+    height: 40px;
+    background: url('../img1.5/brand-block__button-img.svg');
+}
