@@ -132,6 +132,10 @@ button {
     font-weight: 600;
 }
 
+.brand-block--hidden {
+    display: none;
+}
+
 @media (min-width: 768px) {
     .menu {
         flex-wrap: wrap;
@@ -148,6 +152,10 @@ button {
     .main__show-hide-button {
         display: block;
     }
+
+    .brand-block--hidden\@middle-screen {
+        display: none;
+    }
 }
 
 @media (min-width: 960px) {
@@ -161,9 +169,5 @@ button {
 }
 
 .show-hide-button--hidden {
-    display: none;
-}
-
-.brand-block--hidden {
     display: none;
 }
