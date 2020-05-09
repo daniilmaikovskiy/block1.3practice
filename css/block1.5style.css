@@ -168,7 +168,7 @@ button {
 }
 
 @media (min-width: 768px) {
-    .show-hide-button--hidden\@middle-large-screen {
+    .brand-block--hidden\@middle-large-screen {
         display: none;
     }
 }
