@@ -157,3 +157,7 @@ button {
         margin-right: 24px;
     }
 }
+
+.show-hide-button--hidden {
+    display: none;
+}
