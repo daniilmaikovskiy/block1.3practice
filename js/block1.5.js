@@ -1,8 +1,12 @@
 // look q and qAll functions in trueQuerySelector.js
 
 let brandBlocks = qAll('.brand-block');
+let showButton = q('#show-button');
+let hideButton = q('#hide-button');
 
 hideSomeBrandBlocks(brandBlocks);
+addShowButtonClickEvent(showButton, hideButton);
+addHideButtonClickEvent(showButton, hideButton);
 
 function hideSomeBrandBlocks(brandBlocks) {
     const HIDDENS_ON_MIDDLE_SCREEN = [7, 8];
@@ -18,4 +22,18 @@ function hideSomeBrandBlocks(brandBlocks) {
         
         brandBlocks[i].classList.add('brand-block--hidden@middle-large-screen');
     }
+}
+
+function addShowButtonClickEvent(showButton, hideButton) {
+    showButton.addEventListener('click', function () {
+        hideButton.classList.remove('show-hide-button--hidden');
+        showButton.classList.add('show-hide-button--hidden');
+    });
+}
+
+function addHideButtonClickEvent(showButton, hideButton) {
+    hideButton.addEventListener('click', function () {
+        showButton.classList.remove('show-hide-button--hidden');
+        hideButton.classList.add('show-hide-button--hidden');
+    });
 }
