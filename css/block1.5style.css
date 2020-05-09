@@ -122,6 +122,7 @@ button {
 
 .main__show-hide-button {
     display: none;
+    margin: 16px;
 }
 
 .show-hide-button__img {
@@ -130,10 +131,6 @@ button {
 
 .show-hide-button__text {
     font-weight: 600;
-}
-
-.brand-block--hidden {
-    display: none;
 }
 
 @media (min-width: 768px) {
@@ -152,10 +149,6 @@ button {
     .main__show-hide-button {
         display: block;
     }
-
-    .brand-block--hidden\@middle-screen {
-        display: none;
-    }
 }
 
 @media (min-width: 960px) {
@@ -165,6 +158,18 @@ button {
 
     .menu__brand-block {
         margin-right: 32px;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1119px) {
+    .brand-block--hidden\@middle-screen {
+        display: none;
+    }
+}
+
+@media (min-width: 768px) {
+    .show-hide-button--hidden\@middle-large-screen {
+        display: none;
     }
 }
 
