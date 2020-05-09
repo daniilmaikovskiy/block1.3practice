@@ -120,6 +120,10 @@ button {
     background: #B5B6BC;
 }
 
+.show-hide-button {
+    background: #F8F8F8;
+}
+
 .main__show-hide-button {
     display: none;
     margin: 16px;
