@@ -145,16 +145,18 @@ button {
         display: none;
     }
 
-    .main__menu, .main__show-hide-button {
-        margin-left: 24px;
-    }
-
     .main__show-hide-button {
         display: block;
     }
+}
+
+@media (min-width: 960px) {
+    .main__menu, .main__show-hide-button {
+        margin-left: 32px;
+    }
 
     .menu__brand-block {
-        margin-right: 24px;
+        margin-right: 32px;
     }
 }
 
