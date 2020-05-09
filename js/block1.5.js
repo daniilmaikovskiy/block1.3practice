@@ -1,5 +1,6 @@
 const HIDDENS_ON_MIDDLE_SCREEN = [7, 8];
-const FIRST_HIDDEN_ON_LARGE_SCREEN = 9;
+const FIRST_HIDDEN_ON_LARGE_SCREEN 
+    = HIDDENS_ON_MIDDLE_SCREEN[HIDDENS_ON_MIDDLE_SCREEN.length - 1] + 1;
 
 // look q and qAll functions in trueQuerySelector.js
 let brandBlocks = qAll('.brand-block');
@@ -40,6 +41,7 @@ function addShowButtonClickEvent(showButton, hideButton, brandBlocks) {
     showButton.addEventListener('click', function () {
         hideButton.classList.remove('show-hide-button--hidden');
         showButton.classList.add('show-hide-button--hidden');
+
         removeHiddenModifiers(brandBlocks);
     });
 }
@@ -48,6 +50,7 @@ function addHideButtonClickEvent(showButton, hideButton, brandBlocks) {
     hideButton.addEventListener('click', function () {
         showButton.classList.remove('show-hide-button--hidden');
         hideButton.classList.add('show-hide-button--hidden');
+
         addHiddenModifiers(brandBlocks);
     });
 }
