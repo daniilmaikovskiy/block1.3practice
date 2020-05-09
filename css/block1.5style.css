@@ -161,3 +161,7 @@ button {
 .show-hide-button--hidden {
     display: none;
 }
+
+.brand-block--hidden {
+    display: none;
+}
