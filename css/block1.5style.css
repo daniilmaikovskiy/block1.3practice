@@ -35,7 +35,7 @@ button {
 .menu {
     position: relative;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     overflow: hidden;
 }
 
@@ -120,6 +120,18 @@ button {
     background: #B5B6BC;
 }
 
+.main__show-hide-button {
+    display: none;
+}
+
+.show-hide-button__img {
+    margin-right: 16px;
+}
+
+.show-hide-button__text {
+    font-weight: 600;
+}
+
 @media (min-width: 768px) {
     .menu {
         flex-wrap: wrap;
@@ -131,5 +143,17 @@ button {
 
     .main__switch {
         display: none;
+    }
+
+    .main__menu, .main__show-hide-button {
+        margin-left: 24px;
+    }
+
+    .main__show-hide-button {
+        display: block;
+    }
+
+    .menu__brand-block {
+        margin-right: 24px;
     }
 }
