@@ -1,15 +1,23 @@
 // look q and qAll functions in trueQuerySelector.js
 
-const FIRST_HIDDEN_BLOCK = 7;
-
 let brandBlocks = qAll('.brand-block');
 
-for (let i = FIRST_HIDDEN_BLOCK - 1; i < brandBlocks.length; i++) {
-    
-    if (i < FIRST_HIDDEN_BLOCK + 1) {
+hideSomeBrandBlocks(brandBlocks);
 
-        brandBlocks[i].classList.add('brand-block--hidden@middle-screen');
-    } else {
+function hideSomeBrandBlocks(brandBlocks) {
+    const HIDDENS_ON_MIDDLE_SCREEN = [7, 8];
+    const FIRST_HIDDEN_ON_LARGE_SCREEN = 9;
+
+    for (let i = HIDDENS_ON_MIDDLE_SCREEN[0] - 1; 
+        i < HIDDENS_ON_MIDDLE_SCREEN[HIDDENS_ON_MIDDLE_SCREEN.length - 1]; 
+        i++) {
+    
+    brandBlocks[i].classList.add('brand-block--hidden@middle-screen');
+    }
+
+    for (let i = FIRST_HIDDEN_ON_LARGE_SCREEN - 1; 
+            i < brandBlocks.length; i++) {
+        
         brandBlocks[i].classList.add('brand-block--hidden');
     }
 }
