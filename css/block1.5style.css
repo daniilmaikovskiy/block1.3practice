@@ -53,7 +53,6 @@ button {
 
 .main__menu {
     padding-top: 16px;
-    margin-left: 16px;
 }
 
 .main__menu::after {
@@ -146,10 +145,6 @@ button {
         margin-bottom: 16px;
     }
 
-    .main__switch {
-        display: none;
-    }
-
     .main__show-hide-button {
         display: block;
     }
@@ -165,6 +160,57 @@ button {
     }
 }
 
+.show-hide-button--hidden {
+    display: none;
+}
+
+.swiper-container {
+    width: 100%;
+    height: 72px;
+}
+
+.swiper-pagination {
+    width: 100%;
+}
+
+.main__swiper-pagination {
+    margin-top: 16px;
+}
+
+.swiper-slide {
+    width: auto;
+}
+
+.swiper-pagination-bullet {
+    width: 12px;
+    height: 12px;
+    margin-left: 8px;
+    background-color: #DDDDDD;
+    opacity: 1;
+}
+
+.swiper-pagination-bullet-active {
+    background-color: #B5B6BC;
+}
+
+@media (min-width: 768px) {
+    .swiper-container {
+        display: none;
+    }
+    .swiper-pagination {
+        display: none;
+    }
+    .main__menu {
+        margin-left: 24px;
+    }
+}
+
+@media (max-width: 767px) {
+    .menu--hidden\@small-screen {
+        display: none;
+    }
+}
+
 @media (min-width: 768px) and (max-width: 1119px) {
     .brand-block--hidden\@middle-screen {
         display: none;
@@ -175,8 +221,4 @@ button {
     .brand-block--hidden\@middle-large-screen {
         display: none;
     }
-}
-
-.show-hide-button--hidden {
-    display: none;
 }
