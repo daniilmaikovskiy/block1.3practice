@@ -89,6 +89,7 @@ function addShowHideButton() {
         }
 
         isShowMenu = !isShowMenu;
+        hideShowHideButtonOnLargeScreen();
     });
 }
 
