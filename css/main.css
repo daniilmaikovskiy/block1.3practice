@@ -431,9 +431,126 @@ html, body {
 
 /* block1.5 */
 
+.swiper-container {
+    width: 100%;
+    height: 72px;
+}
+
+.swiper-slide {
+    height: 100%;
+    width: auto;
+}
+
+@media (min-width: 768px) {
+    .swiper-container {
+        width: 100%;
+        height: auto;
+    }
+
+    .swiper-wrapper {
+        flex-wrap: wrap;
+    }
+}
+
+.brand-block {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 72px;
+    width: 224px;
+    background-color: #fff;
+    border: 1px solid #EAEAEA;
+    border-radius: 6px;
+}
+
+@media (min-width: 768px) {
+    .swiper-slide__brand-block {
+        margin-bottom: 16px;
+    }
+}
+
+.brand-block__img {
+    margin-left: 16px;
+    height: 32px;
+    width: auto;
+}
+
+.brand-block__img--small {
+    height: 52px;
+}
+
+.brand-block__img--big {
+    height: 22px;
+}
+
+.brand-block__img--little-big {
+    height: 26px;
+}
+
+.brand-block__button {
+    margin-right: 16px;
+    width: 40px;
+    height: 40px;
+    background-image: url(../img1.5/brand-block__button-img.svg);
+    background-color: inherit;
+    transition: all 0.4s ease-out;
+}
+
+.brand-block__button:hover, .brand-block__button:focus {
+    filter: hue-rotate(300deg) brightness(1.1);
+}
+
+@media (min-width: 768px) {
+    .swiper-slide__brand-block {
+        margin-right: 24px;
+    }
+}
+
+.swiper-pagination {
+    width: 100%;
+    height: 12px;
+}
+
+.main__swiper-pagination {
+    margin-top: 16px;
+}
+
+@media (min-width: 768px) {
+    .swiper-pagination {
+        display: none;
+    }
+}
+
+.swiper-pagination-bullet {
+    width: 12px;
+    height: 12px;
+    background-color: #ddd;
+    opacity: 1;
+    margin-right: 6px;
+}
+
+.swiper-pagination-bullet-active {
+    background-color: #B5B6BC;
+}
+
 .repair-of-various-brands__header {
+    margin-bottom: 16px;
+    padding: 16px;
     box-shadow: none;
-    background: linear-gradient(270deg, #FFFFFF 0%, #F8F8F8 98.61%);
+    background-image: linear-gradient(270deg, #FFFFFF 0%, #F8F8F8 98.61%);
+}
+
+@media (min-width: 768px) {
+    .repair-of-various-brands__header {
+        padding-left: 24px;
+        height: 56px;
+    }
+}
+
+@media (min-width: 1120px) {
+    .repair-of-various-brands__header {
+        padding-left: 32px;
+    }
 }
 
 .header__title {
@@ -441,199 +558,73 @@ html, body {
     line-height: 24px;
     letter-spacing: -0.2px;
     text-transform: uppercase;
-    font-weight: normal;
+    font-weight: 400;
     color: #7E7E82;
-    padding: 16px;
 }
 
-.menu {
-    position: relative;
-    display: flex;
-    justify-content: flex-start;
-    overflow: hidden;
+@media (min-width: 768px) {
+    .main__menu {
+        margin-left: 24px;
+        height: 176px;
+        overflow: hidden;
+        transition: height 1s ease;
+    }
 }
 
-.menu::after {
-    content: " ";
-    display: block;
-    position: absolute;
-    top: 0;
-    right: 0;
-    z-index: 100;
-    width: 24px;
-    height: 72px;
-    background: linear-gradient(270deg,
-     #F8F8F8 16.84%, rgba(248, 248, 248, 0.0001) 100%);
-}
-
-.main__menu {
-    padding-top: 16px;
-}
-
-.main__menu::after {
-    top: 16px;
-}
-
-.menu__brand-block {
-    margin-right: 16px;
-}
-
-.brand-block {
-    flex-shrink: 0;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background: #FFFFFF;
-    border: 1px solid #EAEAEA;
-    border-radius: 6px;
-    width: 240px;
-    height: 72px;
-    padding: 0 16px;
-}
-
-.brand-block__logo {
-    display: block;
-    max-height: 32px;
-    max-width: auto;
-}
-
-.brand-block__logo--small {
-    max-height: 44px;
-}
-
-.brand-block__logo--big {
-    max-height: 24px;
-}
-
-.brand-block__button {
-    width: 40px;
-    height: 40px;
-    background: url('../img1.5/brand-block__button-img.svg');
-}
-
-.switch {
-    display: flex;
-    justify-content: center;
-    height: 12px;
-}
-
-.main__switch {
-    margin-top: 16px;
-}
-
-.switch__item {
-    display: inline-block;
-    background: #DDDDDD;
-    width: 12px;
-    height: 12px;
-    border-radius: 50%;
-    margin-right: 8px;
-}
-
-.switch__item--active {
-    background: #B5B6BC;
+@media (min-width: 1120px) {
+    .main__menu {
+        margin-left: 32px;
+    }
 }
 
 .show-hide-button {
-    background: #F8F8F8;
+    background-color: inherit;
 }
 
 .main__show-hide-button {
     display: none;
-    margin: 16px;
 }
 
 .show-hide-button__img {
-    margin-right: 16px;
+    margin-left: 6px;
+    transition: transform 0.6s ease;
 }
 
 .show-hide-button__text {
-    font-weight: 600;
+    margin-left: 10px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: -0.2px;
 }
 
 @media (min-width: 768px) {
-    .menu {
-        flex-wrap: wrap;
-    }
-
-    .menu__brand-block {
-        margin-bottom: 16px;
-    }
-
     .main__show-hide-button {
         display: block;
-    }
-}
-
-@media (min-width: 960px) {
-    .main__menu, .main__show-hide-button {
-        margin-left: 32px;
-    }
-
-    .menu__brand-block {
-        margin-right: 32px;
-    }
-}
-
-.show-hide-button--hidden {
-    display: none;
-}
-
-.swiper-container {
-    width: 100%;
-    height: 72px;
-}
-
-.swiper-pagination {
-    width: 100%;
-}
-
-.main__swiper-pagination {
-    margin-top: 16px;
-}
-
-.swiper-slide {
-    width: auto;
-}
-
-.swiper-pagination-bullet {
-    width: 12px;
-    height: 12px;
-    margin-left: 8px;
-    background-color: #DDDDDD;
-    opacity: 1;
-}
-
-.swiper-pagination-bullet-active {
-    background-color: #B5B6BC;
-}
-
-@media (min-width: 768px) {
-    .swiper-container {
-        display: none;
-    }
-    .swiper-pagination {
-        display: none;
-    }
-    .main__menu {
         margin-left: 24px;
     }
 }
 
-@media (max-width: 767px) {
-    .menu--hidden\@small-screen {
-        display: none;
+@media (min-width: 1120px) {
+    .main__show-hide-button {
+        margin-left: 32px;
     }
 }
 
-@media (min-width: 768px) and (max-width: 1119px) {
-    .brand-block--hidden\@middle-screen {
-        display: none;
-    }
+.show-hide-button:hover .show-hide-button__img, 
+.show-hide-button:focus .show-hide-button__img {
+    transform: rotate(180deg);
 }
 
-@media (min-width: 768px) {
-    .brand-block--hidden\@middle-large-screen {
-        display: none;
-    }
+.show-hide-button:hover .show-hide-button__img--hide-icon, 
+.show-hide-button:focus .show-hide-button__img--hide-icon {
+    transform: rotate(360deg);
+}
+
+.show-hide-button__img--hide-icon {
+    transform: rotate(180deg);
+}
+
+.show-hide-button--hidden {
+    display: none;
 }
