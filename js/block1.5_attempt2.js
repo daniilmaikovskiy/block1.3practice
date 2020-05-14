@@ -101,7 +101,7 @@ window.onresize = function () {
 }
 
 function hideShowHideButtonOnLargeScreen() {
-    if (isShowMenu === false && menu.scrollHeight === menu.clientHeight) {
+    if (isShowMenu === false && menu.scrollHeight <= menu.clientHeight) {
         showHideButton.classList.add('show-hide-button--hidden');
     }
     else {
