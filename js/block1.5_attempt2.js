@@ -88,7 +88,7 @@ function addShowHideButton() {
             showHideButtonImg.classList.add('show-hide-button__img--hide-icon');
         }
 
-        isShowMenu = !isShowMenu;
+        isShowMenu = !isShowMenu; 
     });
 }
 
